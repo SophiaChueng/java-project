@@ -1,0 +1,231 @@
+2020-03-14 22:50:56.399 [main] INFO  com.pingan.seal.SealServerApplication [StartupInfoLogger.java:50] - Starting SealServerApplication on zhangfei.local with PID 99052 (/Users/30gq20191209/IdeaProjects/seal-server/target/classes started by 30gq20191209 in /Users/30gq20191209/IdeaProjects/seal-server)
+2020-03-14 22:50:56.401 [main] DEBUG com.pingan.seal.SealServerApplication [StartupInfoLogger.java:53] - Running with Spring Boot v2.1.12.RELEASE, Spring v5.1.13.RELEASE
+2020-03-14 22:50:56.402 [main] INFO  com.pingan.seal.SealServerApplication [SpringApplication.java:648] - No active profile set, falling back to default profiles: default
+2020-03-14 22:50:57.108 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner [Logger.java:44] - No MyBatis mapper was found in '[com.pingan.seal.mapping]' package. Please check your configuration.
+2020-03-14 22:50:57.556 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8999"]
+2020-03-14 22:50:57.564 [main] INFO  org.apache.catalina.core.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-03-14 22:50:57.565 [main] INFO  org.apache.catalina.core.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-14 22:50:57.653 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-03-14 22:50:57.706 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'personMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pingan.seal.mapper.PersonMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-03-14 22:50:57.708 [main] INFO  org.apache.catalina.core.StandardService [DirectJDKLog.java:173] - Stopping service [Tomcat]
+2020-03-14 22:50:57.800 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field personMapper in com.pingan.seal.controller.TestController required a bean of type 'com.pingan.seal.mapper.PersonMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.pingan.seal.mapper.PersonMapper' in your configuration.
+
+2020-03-14 22:52:03.426 [main] INFO  com.pingan.seal.SealServerApplication [StartupInfoLogger.java:50] - Starting SealServerApplication on zhangfei.local with PID 99072 (/Users/30gq20191209/IdeaProjects/seal-server/target/classes started by 30gq20191209 in /Users/30gq20191209/IdeaProjects/seal-server)
+2020-03-14 22:52:03.429 [main] DEBUG com.pingan.seal.SealServerApplication [StartupInfoLogger.java:53] - Running with Spring Boot v2.1.12.RELEASE, Spring v5.1.13.RELEASE
+2020-03-14 22:52:03.430 [main] INFO  com.pingan.seal.SealServerApplication [SpringApplication.java:648] - No active profile set, falling back to default profiles: default
+2020-03-14 22:52:04.380 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8999"]
+2020-03-14 22:52:04.386 [main] INFO  org.apache.catalina.core.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-03-14 22:52:04.386 [main] INFO  org.apache.catalina.core.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-14 22:52:04.456 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-03-14 22:52:04.536 [main] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:480] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-03-14 22:52:04.977 [main] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:54] - initialising the handler methods
+2020-03-14 22:52:04.979 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-03-14 22:52:04.998 [main] DEBUG o.h.v.i.engine.resolver.TraversableResolvers [TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-14 22:52:05.000 [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator [ResourceBundleMessageInterpolator.java:89] - Loaded expression factory via original TCCL
+2020-03-14 22:52:05.001 [main] DEBUG o.h.v.i.engine.resolver.TraversableResolvers [TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-14 22:52:05.002 [main] DEBUG o.h.validator.internal.engine.ConfigurationImpl [ConfigurationImpl.java:148] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-14 22:52:05.002 [main] DEBUG o.h.validator.internal.engine.ConfigurationImpl [ConfigurationImpl.java:180] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-14 22:52:05.003 [main] DEBUG o.h.validator.internal.engine.ConfigurationImpl [ConfigurationImpl.java:194] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-14 22:52:05.004 [main] DEBUG o.h.v.internal.xml.config.ValidationXmlParser [ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-14 22:52:05.004 [main] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper [ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+2020-03-14 22:52:05.004 [main] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper [ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+2020-03-14 22:52:05.004 [main] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper [ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-14 22:52:05.004 [main] DEBUG o.h.v.internal.xml.config.ValidationXmlParser [ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-14 22:52:05.008 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:578] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-14 22:52:05.008 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:579] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-14 22:52:05.008 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:580] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-14 22:52:05.008 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:581] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-14 22:52:05.008 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:582] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-14 22:52:05.243 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] - Context refreshed
+2020-03-14 22:52:05.268 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+2020-03-14 22:52:05.290 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:50] - Total number of request handlers 6
+2020-03-14 22:52:05.291 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:52:05.292 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
+2020-03-14 22:52:05.292 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:52:05.292 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:52:05.292 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:52:05.292 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/test/test1], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/test1], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:52:05.305 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:58] - Combined number of request handlers 6
+2020-03-14 22:52:05.305 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] - Scanning for api listing references
+2020-03-14 22:52:05.315 [main] DEBUG s.d.s.w.readers.operation.OperationModelsProvider [OperationModelsProvider.java:76] - Adding return parameter of type V
+2020-03-14 22:52:05.316 [main] DEBUG s.d.s.w.readers.operation.OperationModelsProvider [OperationModelsProvider.java:83] - Reading parameters models for handlerMethod |test|
+2020-03-14 22:52:05.316 [main] DEBUG s.d.s.w.readers.operation.OperationModelsProvider [OperationModelsProvider.java:94] - Finished reading parameters models for handlerMethod |test|
+2020-03-14 22:52:05.317 [main] DEBUG s.d.s.r.operation.SwaggerOperationModelsProvider [SwaggerOperationModelsProvider.java:84] - Reading parameters models for handlerMethod |test|
+2020-03-14 22:52:05.326 [main] DEBUG s.documentation.schema.DefaultModelProvider [DefaultModelProvider.java:86] - Skipping model of type V as its either a container type, map, enum or base type, or its already been handled
+2020-03-14 22:52:05.328 [main] DEBUG s.documentation.spring.web.scanners.ApiModelReader [ApiModelReader.java:76] - Did not find any parameter models for void
+2020-03-14 22:52:05.338 [main] DEBUG s.d.s.w.r.operation.OperationResponseClassReader [OperationResponseClassReader.java:59] - Setting spring response class to: null
+2020-03-14 22:52:05.339 [main] DEBUG s.d.s.readers.operation.VendorExtensionsReader [VendorExtensionsReader.java:59] - Extension count 1 for method test
+2020-03-14 22:52:05.348 [main] DEBUG s.d.swagger.readers.operation.OperationAuthReader [OperationAuthReader.java:103] - Authorization count 0 for method test
+2020-03-14 22:52:05.380 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8999"]
+2020-03-14 22:52:05.414 [main] INFO  com.pingan.seal.SealServerApplication [StartupInfoLogger.java:59] - Started SealServerApplication in 22.366 seconds (JVM running for 27.919)
+2020-03-14 22:52:24.004 [http-nio-8999-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 22:52:24.026 [http-nio-8999-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-ui.html
+2020-03-14 22:52:24.082 [http-nio-8999-exec-2] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/springfox.css
+2020-03-14 22:52:24.090 [http-nio-8999-exec-3] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui.css
+2020-03-14 22:52:24.090 [http-nio-8999-exec-4] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui-bundle.js
+2020-03-14 22:52:24.090 [http-nio-8999-exec-5] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js
+2020-03-14 22:52:24.091 [http-nio-8999-exec-6] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/springfox.js
+2020-03-14 22:52:24.391 [http-nio-8999-exec-7] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-resources/configuration/ui
+2020-03-14 22:52:24.395 [http-nio-8999-exec-8] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/favicon-32x32.png
+2020-03-14 22:52:24.483 [http-nio-8999-exec-9] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-resources/configuration/security
+2020-03-14 22:52:24.492 [http-nio-8999-exec-10] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-resources
+2020-03-14 22:52:24.527 [http-nio-8999-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /v2/api-docs
+2020-03-14 22:52:24.527 [http-nio-8999-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [AbstractHandlerMapping.java:423] - Mapped to public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-14 22:52:24.527 [http-nio-8999-exec-2] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /
+2020-03-14 22:52:24.533 [http-nio-8999-exec-2] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /error
+2020-03-14 22:52:24.670 [http-nio-8999-exec-3] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2
+2020-03-14 22:52:24.677 [http-nio-8999-exec-6] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /csrf
+2020-03-14 22:52:24.679 [http-nio-8999-exec-6] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /error
+2020-03-14 22:52:24.739 [http-nio-8999-exec-5] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2
+2020-03-14 22:52:24.740 [http-nio-8999-exec-4] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2
+2020-03-14 22:52:24.740 [http-nio-8999-exec-8] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2
+2020-03-14 22:53:01.738 [http-nio-8999-exec-7] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /v2/api-docs
+2020-03-14 22:53:01.738 [http-nio-8999-exec-7] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [AbstractHandlerMapping.java:423] - Mapped to public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-14 22:53:09.397 [http-nio-8999-exec-10] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2
+2020-03-14 22:53:15.392 [http-nio-8999-exec-2] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /test/test1
+2020-03-14 22:53:15.413 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1020] - HikariPool-1 - configuration:
+2020-03-14 22:53:15.416 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - allowPoolSuspension.............false
+2020-03-14 22:53:15.417 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - autoCommit......................true
+2020-03-14 22:53:15.417 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - catalog.........................none
+2020-03-14 22:53:15.417 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - connectionInitSql...............none
+2020-03-14 22:53:15.417 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - connectionTestQuery.............none
+2020-03-14 22:53:15.417 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - connectionTimeout...............30000
+2020-03-14 22:53:15.418 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - dataSource......................none
+2020-03-14 22:53:15.418 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - dataSourceClassName.............none
+2020-03-14 22:53:15.418 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - dataSourceJNDI..................none
+2020-03-14 22:53:15.419 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - dataSourceProperties............{password=<masked>}
+2020-03-14 22:53:15.419 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - driverClassName................."com.mysql.cj.jdbc.Driver"
+2020-03-14 22:53:15.420 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - healthCheckProperties...........{}
+2020-03-14 22:53:15.420 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - healthCheckRegistry.............none
+2020-03-14 22:53:15.420 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - idleTimeout.....................600000
+2020-03-14 22:53:15.420 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - initializationFailTimeout.......1
+2020-03-14 22:53:15.421 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - isolateInternalQueries..........false
+2020-03-14 22:53:15.421 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - jdbcUrl.........................jdbc:mysql://localhost:3306/seal?useSSL=false&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
+2020-03-14 22:53:15.421 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - leakDetectionThreshold..........0
+2020-03-14 22:53:15.421 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - maxLifetime.....................1800000
+2020-03-14 22:53:15.421 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - maximumPoolSize.................10
+2020-03-14 22:53:15.422 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - metricRegistry..................none
+2020-03-14 22:53:15.422 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - metricsTrackerFactory...........none
+2020-03-14 22:53:15.422 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - minimumIdle.....................10
+2020-03-14 22:53:15.422 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - password........................<masked>
+2020-03-14 22:53:15.422 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - poolName........................"HikariPool-1"
+2020-03-14 22:53:15.423 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - readOnly........................false
+2020-03-14 22:53:15.423 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - registerMbeans..................false
+2020-03-14 22:53:15.423 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - scheduledExecutor...............none
+2020-03-14 22:53:15.423 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - schema..........................none
+2020-03-14 22:53:15.423 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - threadFactory...................internal
+2020-03-14 22:53:15.424 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - transactionIsolation............default
+2020-03-14 22:53:15.424 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - username........................"root"
+2020-03-14 22:53:15.424 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:1052] - validationTimeout...............5000
+2020-03-14 22:53:15.424 [http-nio-8999-exec-2] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:110] - HikariPool-1 - Starting...
+2020-03-14 22:53:15.587 [http-nio-8999-exec-2] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:545] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7876c396
+2020-03-14 22:53:15.589 [http-nio-8999-exec-2] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2020-03-14 22:53:15.596 [http-nio-8999-exec-2] DEBUG com.pingan.seal.mapper.PersonMapper.insert [BaseJdbcLogger.java:143] - ==>  Preparing: insert into person (id, `name`, age) values (?, ?, ?) 
+2020-03-14 22:53:15.618 [http-nio-8999-exec-2] DEBUG com.pingan.seal.mapper.PersonMapper.insert [BaseJdbcLogger.java:143] - ==> Parameters: null, jack(String), null
+2020-03-14 22:53:15.632 [http-nio-8999-exec-2] DEBUG com.pingan.seal.mapper.PersonMapper.insert [BaseJdbcLogger.java:143] - <==    Updates: 1
+2020-03-14 22:53:15.690 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2020-03-14 22:53:15.714 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34942aef
+2020-03-14 22:53:15.731 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40ad3232
+2020-03-14 22:53:15.746 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fc5d071
+2020-03-14 22:53:15.763 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15f7a046
+2020-03-14 22:53:15.776 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@260c36e7
+2020-03-14 22:53:15.790 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c37b06d
+2020-03-14 22:53:15.805 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21a0b068
+2020-03-14 22:53:15.825 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@793801d5
+2020-03-14 22:53:15.851 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:709] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5abfa441
+2020-03-14 22:53:15.851 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:53:45.692 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:54:15.695 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:54:45.701 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:55:15.707 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:55:45.711 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:56:15.713 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:56:24.464 [Thread-48] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+2020-03-14 22:56:24.466 [Thread-48] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2020-03-14 22:56:24.469 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7876c396: (connection evicted)
+2020-03-14 22:56:24.477 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@34942aef: (connection evicted)
+2020-03-14 22:56:24.478 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@40ad3232: (connection evicted)
+2020-03-14 22:56:24.479 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6fc5d071: (connection evicted)
+2020-03-14 22:56:24.480 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@15f7a046: (connection evicted)
+2020-03-14 22:56:24.481 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@260c36e7: (connection evicted)
+2020-03-14 22:56:24.482 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2c37b06d: (connection evicted)
+2020-03-14 22:56:24.484 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@21a0b068: (connection evicted)
+2020-03-14 22:56:24.486 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@793801d5: (connection evicted)
+2020-03-14 22:56:24.487 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase [PoolBase.java:129] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5abfa441: (connection evicted)
+2020-03-14 22:56:24.488 [Thread-48] DEBUG com.zaxxer.hikari.pool.HikariPool [HikariPool.java:411] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2020-03-14 22:56:24.489 [Thread-48] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.
+2020-03-14 22:57:04.044 [main] INFO  com.pingan.seal.SealServerApplication [StartupInfoLogger.java:50] - Starting SealServerApplication on zhangfei.local with PID 99172 (/Users/30gq20191209/IdeaProjects/seal-server/target/classes started by 30gq20191209 in /Users/30gq20191209/IdeaProjects/seal-server)
+2020-03-14 22:57:04.047 [main] DEBUG com.pingan.seal.SealServerApplication [StartupInfoLogger.java:53] - Running with Spring Boot v2.1.12.RELEASE, Spring v5.1.13.RELEASE
+2020-03-14 22:57:04.048 [main] INFO  com.pingan.seal.SealServerApplication [SpringApplication.java:648] - No active profile set, falling back to default profiles: default
+2020-03-14 22:57:05.010 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8999"]
+2020-03-14 22:57:05.016 [main] INFO  org.apache.catalina.core.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-03-14 22:57:05.016 [main] INFO  org.apache.catalina.core.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-14 22:57:05.085 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-03-14 22:57:05.164 [main] DEBUG com.zaxxer.hikari.HikariConfig [HikariConfig.java:480] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-03-14 22:57:05.559 [main] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:54] - initialising the handler methods
+2020-03-14 22:57:05.560 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-03-14 22:57:05.575 [main] DEBUG o.h.v.i.engine.resolver.TraversableResolvers [TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-14 22:57:05.576 [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator [ResourceBundleMessageInterpolator.java:89] - Loaded expression factory via original TCCL
+2020-03-14 22:57:05.577 [main] DEBUG o.h.v.i.engine.resolver.TraversableResolvers [TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-14 22:57:05.578 [main] DEBUG o.h.validator.internal.engine.ConfigurationImpl [ConfigurationImpl.java:148] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-14 22:57:05.578 [main] DEBUG o.h.validator.internal.engine.ConfigurationImpl [ConfigurationImpl.java:180] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-14 22:57:05.579 [main] DEBUG o.h.validator.internal.engine.ConfigurationImpl [ConfigurationImpl.java:194] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-14 22:57:05.579 [main] DEBUG o.h.v.internal.xml.config.ValidationXmlParser [ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-14 22:57:05.579 [main] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper [ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+2020-03-14 22:57:05.580 [main] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper [ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+2020-03-14 22:57:05.580 [main] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper [ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-14 22:57:05.580 [main] DEBUG o.h.v.internal.xml.config.ValidationXmlParser [ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-14 22:57:05.584 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:578] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-14 22:57:05.584 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:579] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-14 22:57:05.584 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:580] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-14 22:57:05.584 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:581] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-14 22:57:05.585 [main] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl [ValidatorFactoryImpl.java:582] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-14 22:57:05.800 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] - Context refreshed
+2020-03-14 22:57:05.814 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+2020-03-14 22:57:05.826 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:50] - Total number of request handlers 6
+2020-03-14 22:57:05.826 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:57:05.827 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
+2020-03-14 22:57:05.827 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:57:05.827 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:57:05.827 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:57:05.827 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:52] - Adding key: [/test/test1], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/test/test1], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
+2020-03-14 22:57:05.839 [main] DEBUG s.d.s.web.plugins.DefaultRequestHandlerCombiner [DefaultRequestHandlerCombiner.java:58] - Combined number of request handlers 6
+2020-03-14 22:57:05.839 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] - Scanning for api listing references
+2020-03-14 22:57:05.849 [main] DEBUG s.d.s.w.readers.operation.OperationModelsProvider [OperationModelsProvider.java:76] - Adding return parameter of type V
+2020-03-14 22:57:05.849 [main] DEBUG s.d.s.w.readers.operation.OperationModelsProvider [OperationModelsProvider.java:83] - Reading parameters models for handlerMethod |test|
+2020-03-14 22:57:05.849 [main] DEBUG s.d.s.w.readers.operation.OperationModelsProvider [OperationModelsProvider.java:94] - Finished reading parameters models for handlerMethod |test|
+2020-03-14 22:57:05.850 [main] DEBUG s.d.s.r.operation.SwaggerOperationModelsProvider [SwaggerOperationModelsProvider.java:84] - Reading parameters models for handlerMethod |test|
+2020-03-14 22:57:05.857 [main] DEBUG s.documentation.schema.DefaultModelProvider [DefaultModelProvider.java:86] - Skipping model of type V as its either a container type, map, enum or base type, or its already been handled
+2020-03-14 22:57:05.859 [main] DEBUG s.documentation.spring.web.scanners.ApiModelReader [ApiModelReader.java:76] - Did not find any parameter models for void
+2020-03-14 22:57:05.867 [main] DEBUG s.d.s.w.r.operation.OperationResponseClassReader [OperationResponseClassReader.java:59] - Setting spring response class to: null
+2020-03-14 22:57:05.868 [main] DEBUG s.d.s.readers.operation.VendorExtensionsReader [VendorExtensionsReader.java:59] - Extension count 1 for method test
+2020-03-14 22:57:05.875 [main] DEBUG s.d.swagger.readers.operation.OperationAuthReader [OperationAuthReader.java:103] - Authorization count 0 for method test
+2020-03-14 22:57:05.905 [main] INFO  org.apache.coyote.http11.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8999"]
+2020-03-14 22:57:05.939 [main] INFO  com.pingan.seal.SealServerApplication [StartupInfoLogger.java:59] - Started SealServerApplication in 22.3 seconds (JVM running for 27.874)
+2020-03-14 22:57:55.497 [http-nio-8999-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-14 22:57:55.514 [http-nio-8999-exec-1] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-ui.html
+2020-03-14 22:57:55.777 [http-nio-8999-exec-2] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-resources/configuration/ui
+2020-03-14 22:57:55.851 [http-nio-8999-exec-3] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-resources/configuration/security
+2020-03-14 22:57:55.860 [http-nio-8999-exec-4] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /swagger-resources
+2020-03-14 22:57:55.899 [http-nio-8999-exec-5] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /v2/api-docs
+2020-03-14 22:57:55.900 [http-nio-8999-exec-5] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [AbstractHandlerMapping.java:423] - Mapped to public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-14 22:57:55.900 [http-nio-8999-exec-6] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /
+2020-03-14 22:57:55.904 [http-nio-8999-exec-6] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /error
+2020-03-14 22:57:55.916 [http-nio-8999-exec-7] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /csrf
+2020-03-14 22:57:55.917 [http-nio-8999-exec-7] DEBUG s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:108] - looking up handler for path: /error

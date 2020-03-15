@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOG_HOME" value="logs"/>
+
+<!--    <contextListener class="com.pingan.fimax.core.mdc.TtlMdcListener"/>-->
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} [%M] [%line] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 按照每天生成日志文件 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/logs/bnaas-mgmt.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/logs/seal-server.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <!--日志文件保留天数 -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期， %thread表示线程名，%-5level：级别从左显示5个字符宽度 %msg：日志消息， %n是换行符 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} [%file:%line] - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="Async" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>20</queueSize>
+        <appender-ref ref="FILE"/>
+    </appender>
+
+
+    <!-- 日志输出级别 -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="Async"/>
+    </root>
+
+    <logger name="org.springframework" level="warn"/>
+    <logger name="org.mybatis" level="info"/>
+    <logger name="com.mchange.v2" level="warn"/>
+    <logger name="org.apache.ibatis" level="info"/>
+    <logger name="org.apache.http" level="info"/>
+    <logger name="com.alibaba.druid" level="info"/>
+    <logger name="ma.glasnost.orika" level="info"/>
+    <logger name="com.pingan.seal" level="debug"/>
+
+</configuration>
